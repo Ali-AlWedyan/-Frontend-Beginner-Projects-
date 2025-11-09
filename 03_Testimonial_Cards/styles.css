@@ -1,0 +1,188 @@
+body{
+    background-color: #e3e3e3;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:1em;
+    height: 90vh;
+    margin: 1em 2em;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+}
+
+
+.container section{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-1 .text{
+    padding:10px;
+    width: 300px;
+    border-radius: 13px;
+    background-color: rgb(40,40,40);
+    color:white; 
+    flex-grow: 2;  
+    position: relative;
+}
+
+.card-1 .text::after{
+    position: absolute;
+    content:" ";
+    border-width: 12px;
+    border-color: rgb(40, 40, 40) transparent transparent transparent;
+    border-style: solid;
+    top: 100%;
+    left: 15%;
+}
+
+.card-1 .profile{
+    flex-grow: 2;
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    padding: 0 1em 1em 1em;
+}
+
+.card-1 .profile img{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.name{
+    letter-spacing: 1px;
+}
+
+.card-1 .pos{
+    color: rgb(70, 70, 70)
+}
+
+.card-2{
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 300px;
+}
+
+.card-2 .profile{
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    padding: 0 1em 1em 1em;
+}
+
+.card-2 .text{
+    padding: 15px;
+}
+
+.card-2 .profile img{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.card-2 .profile .pos{
+    color: rgb(70, 70, 70)
+}
+
+.card-3{
+    display: flex;
+    gap: 0.7em;
+    width: 630px;
+}
+.card-3 .photo{
+    width: 250px;
+}
+.card-3 .photo img{
+    border-radius: 15px;
+    width: 250px;
+    height: 220px;
+
+}
+
+.card-3 .text{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: rgb(40, 40, 40);
+    border-radius: 15px;
+}
+
+.card-3 .name{
+    color: white;
+}
+
+.card-3 .pos{
+    color: lightgray;
+}
+
+.card-3 .about{
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.card-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 25vh;
+    align-items: center;
+    width: 630px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    gap:2em
+}
+
+.card-4 .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-4 .photo::before{
+    content: '<';
+    cursor: pointer;
+}
+.card-4 .photo::after{
+    content: '>';
+    cursor: pointer;
+}
+
+.card-4 .photo img{
+    width: 60px;
+    border-radius: 100% ;
+    margin: 0 1em;
+    z-index: -1;
+}
+
+.card-4 .photo img[src*="profile_1"]{
+    filter: brightness(0.7);
+}
+
+
+@media (max-width: 660px){
+    .container section, .card-3, .card-4{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .card-4, .card-3 .text{
+        width:300px
+    }
+}

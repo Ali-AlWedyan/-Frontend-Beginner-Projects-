@@ -24,7 +24,6 @@
     position: absolute;
     width: 200px;
     height: 50px;
-    border: 1px solid red;
     background-color: black;
     color: white;
     top:120%;
@@ -33,6 +32,8 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    border-radius: 15px;
+    padding:8px;
 }
 
 .navbar a:hover span{
