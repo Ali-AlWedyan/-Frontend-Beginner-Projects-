@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+    gap: 1em;
+} 
+
+.component{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    gap: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+form{
+    display: flex;
+    border-radius: 20px;
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em;
+}
+
+label{
+    display: block;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group > input{
+    padding: 0.5em;
+    border-radius: 15px;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.1);
+}
+
+.input-group > label{
+    position: absolute;
+    z-index: 100;
+    color: darkgray;
+    background-color: inherit;
+    background-color: white;
+    font-size: 15px;
+    padding: 0px 0.5em;
+    left:5%;
+    top:25%;
+    transition: all 0.3s;
+}
+
+.input-group > input:focus ~ label,
+.input-group > input:valid ~ label{
+    color:black;
+    font-size: 14px;
+    top:-15%;
+    transform: translateY(0px);
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+
+}
+.email-label{
+    transform: translateY(-5px);
+}
+
+.input-group .icon{
+    width:20px;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 5%
+}
+
+.input-group p{
+    color: red;
+    margin-left: 0.8em;
+    text-align: left;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submit-button{
+    color: black;
+    background-color: lightgray;
+    padding:0.8em 0.5em;
+    border-radius: 15px;
+    font-size: 16px;
+}

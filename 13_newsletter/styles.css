@@ -1,0 +1,147 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: lightgray;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.card {
+  width: 340px;
+  padding: 30px;
+  background: #fff;
+  border: 6px solid #000;
+  box-shadow: 12px 12px 0 #000;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 18px 18px 0 #000;
+}
+
+.banner {
+  position: absolute;
+  top: 15px;
+  right: -95px;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  width: 350px;
+  text-align: center;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: background 0.5s ease;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.banner-text {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  left: 13%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.banner-text:last-child {
+  opacity: 0;
+  transform: translateY(40%);
+}
+
+.banner:hover {
+  background: #ff4747;
+}
+
+.banner:hover .banner-text:first-child {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.banner:hover .banner-text:last-child {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+  border-bottom: 2px solid #000;
+  width: 55%;
+}
+
+.card__subtitle {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card__form input {
+  padding: 12px;
+  border: 3px solid #000;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.card__form input:focus {
+  outline: none;
+  transform: scale(1.05);
+  border-color: #ff4747;
+}
+
+.sign-up {
+  border: 3px solid #000;
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.sign-up:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 0 #000;
+}
+
+.sign-up:active {
+  animation: shake 0.5s ease-in-out;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
