@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     background-color: lightgray;
-    gap: 1em;
+    cursor: default;
 
 } 
 
@@ -15,28 +15,22 @@
     border: 6px solid #000;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
-    gap: 1em;
     text-align: center;
     padding: 1em;
-    font-family: "Poppins", sans-serif;
-    
-    
+    margin: 1em;
+    font-family: "Poppins", sans-serif;    
 }
 
-h1{
+.title{
     text-decoration: underline;
+    letter-spacing: 1px;
 }
 
-form{
-    display: flex;
-    border-radius: 20px;
-}
-
-.sign-up{
+.profile{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: 3em;
+    padding: 2em 2em 0 2em;
 }
 
 label{
@@ -63,8 +57,9 @@ label{
     background-color: white;
     font-size: 15px;
     padding: 0px 0.5em;
-    left:5%;
+    left:8%;
     top:25%;
+    cursor:text;
     transition: all 0.3s;
 }
 
@@ -88,43 +83,76 @@ label{
     cursor: pointer;
     position: absolute;
     top: 25%;
-    right: 5%
+    right: 8%
 }
 
 .input-group p{
     color: red;
-    margin-left: 0.8em;
+    margin-left: 2em;
     text-align: left;
 }
 
-.stats{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 3em;
-    border-radius: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .submit-button{
+    
     color: black;
     background-color: lightgray;
     padding:0.8em 0.5em;
     border: 3px solid #000;
     border-radius: 15px;
     font-size: 16px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-button:hover{
+    font-size: 17px;
+    scale: 110%;
+}
+
+.progress{
+    display: flex;
+    padding: 1em;
+}
+
+.progress::after{
+content: '65%';
+}
+
+.progress span{
+    background-color: #000;
+    flex-grow: 1;
+    margin: .3em;
+    border-radius: 30px;
+    position: relative;
+}
+
+.progress span::before{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    z-index: 2;
+    width: 100px;
+    left: -4%;
+    bottom: -60%;
+    padding: 5px;
+    margin: .3em;
+    border-radius: 30px;
+    
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: start;
+    margin: 0 2em 0 2em;
+    padding: 1em 2em;
+    border-radius: 13px ;
+    background-color: lightgray;
+    line-height: 1.5;
+}
+
+.list li s{
+    color:gray
 }
