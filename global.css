@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .5;
+    line-height: 1.5;
 }
 
 html{

@@ -49,13 +49,18 @@ body{
     text-shadow: 0 0 4px #000;
 }
 
-/* .tabs::before{
-    content: "";
-    background-color: #000;
-} */
+.tab-content{
+    text-align: center;
+}
 
 .content{
     display: grid;
     padding: .5em;
     grid-template-rows: 100px 100px 100px;
+}
+
+@media(max-width:40em) {
+    .tabs .item{
+        font-size: 12px;
+    }
 }

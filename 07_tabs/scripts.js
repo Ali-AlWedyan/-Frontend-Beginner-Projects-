@@ -1,5 +1,5 @@
 const tabs = document.querySelectorAll(".item")
-const contents = document.querySelectorAll(".target p")
+const contents = document.querySelectorAll(".tab-content")
 
 function switchTab(i){
 
