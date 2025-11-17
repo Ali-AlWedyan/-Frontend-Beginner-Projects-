@@ -4,6 +4,7 @@
     justify-items: center;
     height: 100vh;
     gap:5em;
+    background-color: lightgray;
 }
 
 .changelog-header{
@@ -25,8 +26,9 @@ h3, p{
 
 .date p{
     text-align: end;
-    color: gray;
+    color: white;
     margin-top: 3em;
+    text-shadow: 0 0 15px black;
     position: relative;
 }
 
