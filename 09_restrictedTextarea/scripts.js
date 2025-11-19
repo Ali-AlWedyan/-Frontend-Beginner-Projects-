@@ -10,7 +10,6 @@ textarea.addEventListener("input", ()=>{
     else{counter.style.color = "black";}
 })
 
-
     // doesn't consider backspace and del
 
 // textarea.addEventListener("keypress", key =>{
