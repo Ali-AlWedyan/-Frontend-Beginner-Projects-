@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    cursor: default;
+}
+
+.container{
+    position: relative;
+}
+
+.container .text-area{
+    width: 350px;
+    height: 150px;
+    resize: none;
+    padding: .5em 1em;
+    border: 6px solid #000;
+    border-radius: 15px;
+    
+}
+
+.container span{
+    position: absolute;
+    right: 3%;
+    color: #000;
+    bottom: 5%;
+}
