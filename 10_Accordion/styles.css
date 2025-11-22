@@ -3,4 +3,67 @@ body{
     background-color: lightgray;
     justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', "Times", "serif";
+
+}
+
+.accordion-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1em 1em;
+    margin-top: 1em;
+    background-color: whitesmoke;
+    border: 6px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.accordion-item{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 0;
+}
+
+.accordion-item .accordion-question,
+.accordion-item .accordion-answer{
+    padding: .5em 1em;
+    border-radius: 13px;
+}
+
+.accordion-question{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.accordion-question > .arrow{
+    position: absolute;
+    content: ">";
+    color: #fff;
+    right: 5%;
+    rotate: 90deg;
+    transition: all 0.3s;
+}
+
+.accordion-answer{
+    display: no;
+    border: 2px solid ;
+    cursor: default;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    transition: all .8s;
+}
+
+.accordion-answer.active {
+    max-height: 500px;
+    opacity: 1;
+    margin: .5em 0;
+
 }
