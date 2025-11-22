@@ -4,8 +4,5 @@ const answers = document.querySelectorAll(".accordion-answer");
 
 questions.forEach((q, i) => q.addEventListener("click", e =>{
     arrows[i].style.rotate = arrows[i].style.rotate === "0deg" ? "90deg" : "0deg";
-    setTimeout(() =>{
-        answers[i].classList.toggle("active");
-    }, 500);
-
+    answers[i].classList.toggle("active");
 }))

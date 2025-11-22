@@ -2,13 +2,13 @@ body{
     display: flex;
     background-color: lightgray;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     font-family: 'Times New Roman', "Times", "serif";
-
 }
 
 .accordion-container{
     display: flex;
+    gap: .5em;
     flex-direction: column;
     justify-content: start;
     padding: 1em 1em;
@@ -17,7 +17,6 @@ body{
     border: 6px solid #000;
     border-radius: 15px;
     box-shadow: 0 0 6px #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .accordion-item{
@@ -51,7 +50,6 @@ body{
 }
 
 .accordion-answer{
-    display: no;
     border: 2px solid ;
     cursor: default;
     overflow: hidden;
@@ -65,5 +63,4 @@ body{
     max-height: 500px;
     opacity: 1;
     margin: .5em 0;
-
 }
